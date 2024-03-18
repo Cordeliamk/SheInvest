@@ -4,7 +4,7 @@ interface Props {
 onClick: (e: SyntheticEvent) => void;
 search: string | undefined;
 handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
-}
+};
 
 const Search: React.FC<Props> = ({onClick, search, handleChange}: Props): JSX.Element => {
   return (
