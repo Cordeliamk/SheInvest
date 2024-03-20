@@ -17,6 +17,11 @@ function App() {
       // console.log(e);
   };
 
+  const onPortfolioCreate = (e:SyntheticEvent) => {
+    e.preventDefault();
+    console.log(e);
+  }
+
   const onClick = async (e: SyntheticEvent) => {
     const result = await searchCompanies(search);
   if(typeof result === "string"){
@@ -33,7 +38,10 @@ useEffect(() => {
   return (
     <div className="App">
       <Search onClick={onClick} search={search} handleChange={handleChange}/>
-      <CardList searchResults={searchResult}/>
+      <CardList 
+      searchResults={searchResult} 
+      onPortfolioCreate={onPortfolioCreate}
+      />
       { serverError && <div>Unable to connect to API </div>}
       {/* { serverError ? <div>Connected</div> : <div>Unable to connect</div>} */}
 
