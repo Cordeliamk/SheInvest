@@ -55,7 +55,6 @@ useEffect(() => {
   return (
     <div className="App">
       <Navbar/>
-      <Hero />
       <Search 
       onSearchSubmit={onSearchSubmit} 
       search={search} 
