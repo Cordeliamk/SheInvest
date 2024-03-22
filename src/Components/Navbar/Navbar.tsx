@@ -11,7 +11,7 @@ const Navbar = (props: Props) => {
         <div className="flex items-center space-x-20">
             <Link to="/">
           <img src={logo} alt="" />
-          </Link>"
+          </Link>
           <div className="hidden font-bold lg:flex">
            <Link to="/search" className="text-black hover:text-darkBlue">
               Search
